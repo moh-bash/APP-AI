@@ -5,6 +5,9 @@
     font-family: "Roboto" , sans-serif;
 
 }
+body{
+  height: 100%;
+}
 
 .container{
     margin: 0 20px;
@@ -15,9 +18,14 @@
     }
 }
 
+h2{
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
 header{
     background-color: rgba(31, 108, 223, 0.54);
-    background-image: linear-gradient(#1e1e1f85 ), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-1iZ_nHUt9BVziEP_9k0CQe6WxGrfmA5rlHh40PuCEPA2Lwp4UjJTfXquV5HpHRxuKE&usqp=CAU);
+    background-image: linear-gradient(to top, #00000085 60% ,#000000c9  ), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-1iZ_nHUt9BVziEP_9k0CQe6WxGrfmA5rlHh40PuCEPA2Lwp4UjJTfXquV5HpHRxuKE&usqp=CAU);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -51,23 +59,44 @@ nav ul{
     display: flex;
     list-style-type: none;
     gap: 25px;
-    color: white;
-}
-
-nav ul li{
+  }
+  
+  nav ul li a{
     font-weight:100;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+ color: #4191E1;
 }
 
 section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     height: 300px;
+}
+section h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+section button{
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: #6F00FF;
+  color: white;
+  font-size: 20px;
 }
 
 
 
 .name-table {
     width: 100%;
-    margin-top: 40px;
+    margin: 0  0 40px  0;
   border-spacing: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 15px;
@@ -75,7 +104,7 @@ section{
 }
 
 .name-table thead th {
-  background-color: #616465;
+  background-color: #4191E1;
   color: white;
   font-size: 16px;
   padding: 20px;
@@ -109,3 +138,18 @@ section{
 
 
 
+footer{
+  background-color: #212222;
+  color: white;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+}
+footer p{
+  text-align: center;
+
+}
+
+.test{
+  height: 100vh;
+}
