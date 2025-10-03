@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto" , sans-serif;
-
 }
+
 body{
   height: 100%;
 }
@@ -24,6 +24,8 @@ h2{
 }
 
 
+
+/* header */
 header{
     background-color: rgba(31, 108, 223, 0.54);
     background-image: linear-gradient(to top, #00000085 70% ,#000000  ), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-1iZ_nHUt9BVziEP_9k0CQe6WxGrfmA5rlHh40PuCEPA2Lwp4UjJTfXquV5HpHRxuKE&usqp=CAU);
@@ -34,6 +36,9 @@ header{
     top: -326px;
 }
 
+
+
+/* navbor */
 nav{
     display: flex;
     justify-content: space-between;
@@ -64,7 +69,7 @@ nav ul{
     list-style-type: none;
     gap: 25px;
   }
-  
+
   nav ul li a{
     font-weight:100;
     cursor: pointer;
@@ -72,9 +77,12 @@ nav ul{
     text-decoration: none;
 }
 nav ul li a:hover{
- color: #4191E1;
+  color: #4191E1;
 }
 
+
+
+/* section */
 section{
   display: flex;
   flex-direction: column;
@@ -82,12 +90,14 @@ section{
   align-items: center;
     height: 309px;
 }
+
 section h1{
   color: white;
   font-weight: bolder;
   font-size: 80px;
   margin-bottom: 40px;
 }
+
 section button{
   padding: 10px 30px;
   border-radius: 15px;
@@ -97,6 +107,7 @@ section button{
   border: none;
   transition: .5s;
 }
+
 section button:hover{
   background-color: #4191E1;
   box-shadow: 0px 0px 15px 7px #4191E1;
@@ -105,15 +116,16 @@ section button:hover{
 
 
 
+/* table */
 .name-table {
-    width: 100%;
-    /* margin: 0  0 40px  0; */
+  width: 100%;
   border-spacing: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 15px;
   overflow: hidden;
   transition: .5s;
 }
+
 .name-table:hover {
   box-shadow: 0 4px 12px #1b83eb66;
 }
@@ -138,28 +150,31 @@ section button:hover{
   border-bottom: 1px solid #eee;
 }
 
-
-
-
-
-
 .name-table tbody tr:nth-child(odd) {
   background-color: #ffffff; 
 }
+
 .name-table tbody tr:nth-child(even) {
   background-color: #e6f4fa; /
 }
 
+
+
+/* paragraph & image */
 .paragraph{
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 100px;
 }
+
 .paragraph img{
   width: 300px;
 }
 
+
+
+/* the footer */
 footer{
   background-color: #212222;
   color: white;
@@ -168,8 +183,10 @@ footer{
   bottom: 0;
   margin-top: 40px;
 }
+
 footer p{
   text-align: center;
+  font-size: 16px;
 }
 
 .test{
