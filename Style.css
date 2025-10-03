@@ -146,7 +146,6 @@ section button:hover{
 .name-table tbody tr:nth-child(odd) {
   background-color: #ffffff; 
 }
-
 .name-table tbody tr:nth-child(even) {
   background-color: #e6f4fa; /
 }
@@ -171,7 +170,6 @@ footer{
 }
 footer p{
   text-align: center;
-
 }
 
 .test{
