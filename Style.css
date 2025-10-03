@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto" , sans-serif;
+
+}
+
+.container{
+    margin: 0 20px;
+}
+@media (min-width:760px){
+    .container{
+    margin: 0 85px;
+    }
+}
+
+header{
+    background-color: rgba(31, 108, 223, 0.54);
+    background-image: linear-gradient(#1e1e1f85 ), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-1iZ_nHUt9BVziEP_9k0CQe6WxGrfmA5rlHh40PuCEPA2Lwp4UjJTfXquV5HpHRxuKE&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 22px 0;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+}
+
+nav .logo img{
+    width: 45px;
+    margin-right: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    color: white;
+}
+
+nav ul li{
+    font-weight:100;
+    cursor: pointer;
+}
+
+section{
+    height: 300px;
+}
+
+
+
+.name-table {
+    width: 100%;
+    margin-top: 40px;
+  border-spacing: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.name-table thead th {
+  background-color: #616465;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  border-right: 1px solid #f9fafa;
+}
+
+.name-table thead th:last-child {
+  border-right: none;
+}
+
+.name-table tbody td {
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+.name-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+.name-table tbody tr:nth-child(even) {
+  background-color: #e6f4fa; /
+}
+
+
+
