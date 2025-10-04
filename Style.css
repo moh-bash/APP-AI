@@ -23,6 +23,11 @@ h2{
   margin: 35px 0px 18px 0px;
 }
 
+h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 
 
 /* header */
@@ -48,7 +53,7 @@ nav{
     font-size: 18px;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to top , #00000000 0%, #080808) , url();
+    background-image: linear-gradient(to top , #00000000 , #080808 99%) , url();
 }
 
 nav .logo{
@@ -74,10 +79,19 @@ nav ul{
     font-weight:100;
     cursor: pointer;
     color: white;
-    text-decoration: none;
+  }
+  
+a{
+  text-decoration: none;
 }
 nav ul li a:hover{
   color: #4191E1;
+}
+
+.nav-top{
+   position: sticky;
+    top: -175px;
+    margin-bottom:50px ;
 }
 
 
@@ -91,11 +105,15 @@ section{
     height: 309px;
 }
 
-section h1{
+h1{
   color: white;
   font-weight: bolder;
   font-size: 80px;
   margin-bottom: 40px;
+  text-align: center;
+}
+.titlePag{
+  padding: 12px;
 }
 
 section button{
@@ -117,20 +135,22 @@ section button:hover{
 
 
 /* table */
-.name-table {
+.table {
   width: 100%;
   border-spacing: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 15px;
   overflow: hidden;
-  transition: .5s;
+  transition:0.3s ease-in-out;
 }
 
-.name-table:hover {
+.table:hover {
+  cursor: pointer;
   box-shadow: 0 4px 12px #1b83eb66;
 }
 
-.name-table thead th {
+
+.table thead th {
   background-color: #4191E1;
   color: white;
   font-size: 16px;
@@ -138,11 +158,11 @@ section button:hover{
   border-right: 1px solid #f9fafa;
 }
 
-.name-table thead th:last-child {
+.table thead th:last-child {
   border-right: none;
 }
 
-.name-table tbody td {
+.table tbody td {
   padding: 16px;
   text-align: center;
   font-size: 14px;
@@ -150,11 +170,11 @@ section button:hover{
   border-bottom: 1px solid #eee;
 }
 
-.name-table tbody tr:nth-child(odd) {
+.table tbody tr:nth-child(odd) {
   background-color: #ffffff; 
 }
 
-.name-table tbody tr:nth-child(even) {
+.table tbody tr:nth-child(even) {
   background-color: #e6f4fa; /
 }
 
@@ -191,4 +211,62 @@ footer p{
 
 .test{
   height: 100vh;
+}
+
+
+
+/* --------------- */
+.sushal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px 0;
+  flex: 4;
+}
+.card{
+  display: flex;
+  min-width: 235px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 15px 30px;
+}
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 12px #6f00ff6d;
+
+}
+.imgapp{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: slateblue;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+  width: 100%;
+
+}
+form input[type="text"]
+,form input[type="email"]{
+  width: 49.5%;
+  padding: 5px;
+}
+form textarea{
+  width: 100%;
+  padding: 5px;
+
+}
+form input[type="submit"]{
+  background-color: #6F00FF;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: ew-resize;
 }
