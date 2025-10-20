@@ -25,15 +25,51 @@
         </div>
     </header>
     <h2>Lorem ipsum dolor sit.</h2>
-  <div class="card container">
-            <form action="#">
-                <input type="text" placeholder="enter yor name">
-                <input type="email" placeholder="enter your email">
-                <textarea name="" rows="6" id="" placeholder="Massgg....."></textarea>
-                <input type="submit">
-            </form>
-        </div>    <footer>
+    <h2>إضافة تطبيق جديد</h2>
+ <div class="card container">
+
+  <form id="addAppForm" enctype="multipart/form-data">
+    <input type="text" id="appName" placeholder="اسم التطبيق (بالإنجليزية فقط)" required>
+
+    <input type="text" id="appCompany" placeholder="اسم الشركة المطورة" required>
+
+    <input type="url" id="appURL" placeholder="رابط الموقع (URL)" required>
+
+    <!-- حقل إضافة الصورة -->
+    <div class="image-upload">
+      <label for="appImage">صورة التطبيق:</label>
+      <input type="file" id="appImage" accept="image/*" required>
+      <div id="imagePreview" class="image-preview"></div>
+    </div>
+
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" id="appFree">
+        التطبيق مجاني
+      </label>
+    </div>
+
+    <select id="appField" required>
+      <option value="" disabled selected>اختر مجال الاستخدام</option>
+      <option value="Education">Education</option>
+      <option value="E-Commerce">E-Commerce</option>
+      <option value="Robotics">Robotics</option>
+      <option value="Healthcare">Healthcare</option>
+    </select>
+
+    <textarea id="appDesc" rows="5" placeholder="أدخل شرحًا مختصرًا عن التطبيق" required></textarea>
+
+    <div class="btns">
+      <input type="submit" value="إرسال">
+      <input type="reset" value="إعادة">
+    </div>
+  </form>
+</div> 
+    
+        <footer>
         <p>syrian ai@</p>
     </footer>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./myFunctions.js"></script></body>
 </body>
 </html>

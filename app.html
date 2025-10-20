@@ -1,59 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./Style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
     <header class="nav-top">
-         <nav class="container">
-            <div class="logo">
-                <img src="./IMAGE22/LOGO.png" alt="">
-                <p>SYRIAN AI</p>
-            </div>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./abut_us.html">Abut Us</a></li>
-                <li><a href="./app.html">App</a></li>
-                <li><a href="./add_app.html">Add App</a></li>
-            </ul>
-        </nav>
-        <div class="titlePag">
-            <h1>APP AI</h1>
+      <nav class="container">
+        <div class="logo">
+          <img src="./IMAGE22/LOGO.png" alt="" />
+          <p>SYRIAN AI</p>
         </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./abut_us.html">Abut Us</a></li>
+          <li><a href="./app.html">App</a></li>
+          <li><a href="./add_app.html">Add App</a></li>
+        </ul>
+      </nav>
+      <div class="titlePag">
+        <h1>APP AI</h1>
+      </div>
     </header>
-<div class="container">
-  <h2>Student Names</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>User Name</th>
-          <th>الاسم</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mohamad Bashir Alkuja</td>
-          <td>289227</td>
-          <td>محمد بشير الخوجة</td>
-        </tr>
-        <tr>
-          <td>Mohamad Bashir Alkuja</td>
-          <td>289227</td>
-          <td>محمد بشير الخوجة</td>
-        </tr>
-        <tr>
-          <td>Mohamad Bashir Alkuja</td>
-          <td>289227</td>
-          <td>محمد بشير الخوجة</td>
-        </tr>
-      </tbody>
-    </table>
-</div>    <footer>
-        <p>syrian ai@</p>
+    <div class="container">
+      <h2>AI Applications</h2>
+      <table class="table" id="appsTable">
+        <thead>
+          <tr>
+            <th>الصورة</th>
+            <th>اسم التطبيق</th>
+            <th>الشركة المطورة</th>
+            <th>مجال الاستخدام</th>
+            <th>مجاني / غير مجاني</th>
+            <th>إظهار التفاصيل</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/240px-ChatGPT_logo.svg.png"
+                alt="ChatGPT"
+                class="app-thumbnail"
+              />
+            </td>
+            <td>ChatGPT</td>
+            <td>OpenAI</td>
+            <td>Education</td>
+            <td>مجاني جزئيًا</td>
+            <td>
+              <button class="show-details btn btn-sm">عرض التفاصيل</button>
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none">
+            <td colspan="6">
+              <div class="app-details-container">
+                <div class="app-image-large">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/240px-ChatGPT_logo.svg.png"
+                    alt="ChatGPT"
+                    class="large-app-image"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3>ChatGPT</h3>
+                  <p><strong>الشركة:</strong> OpenAI</p>
+                  <p><strong>المجال:</strong> Education</p>
+                  <p><strong>السعر:</strong> مجاني جزئيًا</p>
+                  <p>
+                    <strong>الوصف:</strong> ChatGPT هو نموذج لغوي يستخدم الذكاء
+                    الاصطناعي لتوليد النصوص والمحادثات الذكية.
+                  </p>
+                  <a
+                    href="https://chat.openai.com"
+                    target="_blank"
+                    class="visit-btn"
+                    >زيارة الموقع</a
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Google_Bard_logo.svg"
+                alt="Google Bard"
+                class="app-thumbnail"
+              />
+            </td>
+            <td>Google Bard</td>
+            <td>Google</td>
+            <td>Research</td>
+            <td>مجاني</td>
+            <td>
+              <button class="show-details btn btn-sm">عرض التفاصيل</button>
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none">
+            <td colspan="6">
+              <div class="app-details-container">
+                <div class="app-image-large">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Google_Bard_logo.svg"
+                    alt="Google Bard"
+                    class="large-app-image"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3>Google Bard</h3>
+                  <p><strong>الشركة:</strong> Google</p>
+                  <p><strong>المجال:</strong> Research</p>
+                  <p><strong>السعر:</strong> مجاني</p>
+                  <p>
+                    <strong>الوصف:</strong> Bard مساعد ذكي يعتمد على نموذج
+                    Gemini من Google ويقدّم معلومات فورية وتفاعلية.
+                  </p>
+                  <a
+                    href="https://bard.google.com"
+                    target="_blank"
+                    class="visit-btn"
+                    >زيارة الموقع</a
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg"
+                alt="Midjourney"
+                class="app-thumbnail"
+              />
+            </td>
+            <td>Midjourney</td>
+            <td>Midjourney Inc</td>
+            <td>Art & Design</td>
+            <td>غير مجاني</td>
+            <td>
+              <button class="show-details btn btn-sm">عرض التفاصيل</button>
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none">
+            <td colspan="6">
+              <div class="app-details-container">
+                <div class="app-image-large">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg"
+                    alt="Midjourney"
+                    class="large-app-image"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3>Midjourney</h3>
+                  <p><strong>الشركة:</strong> Midjourney Inc</p>
+                  <p><strong>المجال:</strong> Art & Design</p>
+                  <p><strong>السعر:</strong> غير مجاني</p>
+                  <p>
+                    <strong>الوصف:</strong> Midjourney يولّد صورًا فنية باستخدام
+                    الذكاء الاصطناعي من خلال الأوامر النصية.
+                  </p>
+                  <a
+                    href="https://www.midjourney.com"
+                    target="_blank"
+                    class="visit-btn"
+                    >زيارة الموقع</a
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxiq8rwXckZAP_inAe6ki68mFKhxAIYYzc96KJMP0JY4KC899jXBwKagCNpSWPkAxVBj5ADudR0.gDOfn5L.Bpkg-&format=source"
+                alt="Grammarly"
+                class="app-thumbnail"
+              />
+            </td>
+            <td>Grammarly</td>
+            <td>Grammarly Inc</td>
+            <td>Writing</td>
+            <td>مجاني جزئيًا</td>
+            <td>
+              <button class="show-details btn btn-sm">عرض التفاصيل</button>
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none">
+            <td colspan="6">
+              <div class="app-details-container">
+                <div class="app-image-large">
+                  <img
+                    src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxiq8rwXckZAP_inAe6ki68mFKhxAIYYzc96KJMP0JY4KC899jXBwKagCNpSWPkAxVBj5ADudR0.gDOfn5L.Bpkg-&format=source"
+                    alt="Grammarly"
+                    class="large-app-image"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3>Grammarly</h3>
+                  <p><strong>الشركة:</strong> Grammarly Inc</p>
+                  <p><strong>المجال:</strong> Writing</p>
+                  <p><strong>السعر:</strong> مجاني جزئيًا</p>
+                  <p>
+                    <strong>الوصف:</strong> Grammarly يستخدم الذكاء الاصطناعي
+                    لتصحيح النصوص وتحسين الأسلوب اللغوي.
+                  </p>
+                  <a
+                    href="https://www.grammarly.com"
+                    target="_blank"
+                    class="visit-btn"
+                    >زيارة الموقع</a
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="https://docubase.mit.edu/wp-content/uploads/2020/04/runway-logo-420x420.png"
+                alt="Runway ML"
+                class="app-thumbnail"
+              />
+            </td>
+            <td>Runway ML</td>
+            <td>Runway</td>
+            <td>Video Editing</td>
+            <td>غير مجاني</td>
+            <td>
+              <button class="show-details btn btn-sm">عرض التفاصيل</button>
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none">
+            <td colspan="6">
+              <div class="app-details-container">
+                <div class="app-image-large">
+                  <img
+                    src="https://docubase.mit.edu/wp-content/uploads/2020/04/runway-logo-420x420.png"
+                    alt="Runway ML"
+                    class="large-app-image"
+                  />
+                </div>
+                <div class="app-info">
+                  <h3>Runway ML</h3>
+                  <p><strong>الشركة:</strong> Runway</p>
+                  <p><strong>المجال:</strong> Video Editing</p>
+                  <p><strong>السعر:</strong> غير مجاني</p>
+                  <p>
+                    <strong>الوصف:</strong> Runway ML أداة لتحرير الفيديوهات
+                    بالذكاء الاصطناعي، مثل إزالة الخلفيات وتوليد مشاهد جديدة.
+                  </p>
+                  <a
+                    href="https://runwayml.com"
+                    target="_blank"
+                    class="visit-btn"
+                    >زيارة الموقع</a
+                  >
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <p>syrian ai@</p>
     </footer>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./myFunctions.js"></script>
+  </body>
 </html>
