@@ -26,10 +26,16 @@ $("#addAppForm").submit(async function (e) {
   e.preventDefault();
 
   let appName = $("#appName").val().trim();
-  if (!/^[A-Za-z\s]+$/.test(appName)) {
-    alert("اسم التطبيق يجب أن يحتوي على أحرف إنجليزية فقط");
+  if (!/^[A-Za-z]+$/.test(appName)) {
+    alert("اسم التطبيق يجب أن يحتوي على أحرف إنجليزية فقط وبدون فراغات");
     return;
   }
+
+    let appCompany = $("#appCompany").val().trim();
+    if (!/^[A-Za-z\s]+$/.test(appCompany)) {
+      alert("اسم الشركة يجب أن يحتوي على أحرف إنجليزية فقط");
+      return;
+    }
 
   
   const imageFile = $("#appImage")[0].files[0];
