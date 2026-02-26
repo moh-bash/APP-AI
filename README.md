@@ -29,9 +29,3 @@ A simple web project for university that showcases apps using HTML, CSS, and jQu
 - CSS
 - JavaScript
 - jQuery
-  
-   
-
-
-
-ذذذذ
